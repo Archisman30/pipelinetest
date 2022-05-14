@@ -3,20 +3,20 @@ pipeline{
 agent any
 
 stages{
- stage('SCM'){
+ stage('SCM')
  steps{
  echo'Geeting the code from git'
 
 stages{
- stage('Build'){
+ stage('Build')
  steps{
  echo'Building the code'
 
 stages{
- stage('Test'){
+ stage('Test')
  steps{
  echo'Testing the code'
 }
 }
 }
-}
+

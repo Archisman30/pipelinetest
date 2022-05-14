@@ -1,20 +1,20 @@
-pipeline{
+pipeline {
 
 agent any
 
-stages{
- stage('SCM')
- steps{
- echo'Geeting the code from git'
-
-stages{
- stage('Build')
- steps{
+stages {
+ stage('SCM') {
+ 	steps {
+ 	echo'Geeting the code from git'
+}
+}
+ stage('Build') {
+ steps {
  echo'Building the code'
-
-stages{
- stage('Test')
- steps{
+}
+}
+ stage('Test') {
+ steps {
  echo'Testing the code'
 }
 }
